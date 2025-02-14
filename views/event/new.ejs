@@ -1,0 +1,23 @@
+<%- include("../partials/header.ejs") %>
+<main id="eventCreate">
+    <h2 class="bold underline">Create an Event:</h2>
+
+    <form method="POST" action="/events" enctype="multipart/form-data">
+        <label class="bold" for="category">Type: <select id="category" name="category" required>
+            <option value="">- Select Event Type -</option>
+            <option value="Video Games">Video Games</option>
+            <option value="Tabletop / Board Game">Tabletop / Board Game</option>
+            <option value="Club Event">Club Event</option>
+            <option value="Tournament">Tournament</option>
+            <option value="Other">Other</option>
+        </select></label>
+        <label class="bold" for="title">Title: <input id="title" name="title" type="text" required></label>
+        <label class="bold" for="details">Description: <textarea id="details" name="details" required></textarea></label>
+        <label class="bold" for="location">Location: <input id="location" name="location" type="text" required></label>
+        <label class="bold" for="startTime">Start: <input id="startTime" name="startTime" type="datetime-local" required></label>
+        <label class="bold" for="endTime">End: <input id="endTime" name="endTime" type="datetime-local" required></label>
+        <label class="bold" for="image">Icon: <input id="image" name="image" type="file" required></label>
+        <input type="submit" value="Submit">
+    </form>
+</main>
+<%- include("../partials/footer.ejs") %>

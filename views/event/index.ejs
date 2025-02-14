@@ -1,0 +1,35 @@
+<%- include("../partials/header.ejs") %>
+<main id="eventList">
+    <% if(events.length) {
+        const categories = [];
+        %>
+    <ul>
+        <%for(let i = 0; i < events.length; i++) {
+            if(!categories.includes(events[i].category)) 
+            {
+                categories.push(events[i].category) 
+            }
+        }
+        
+        for(let i = 0; i < categories.length; i++)
+        {%>
+            <li>
+                <h2><%= categories[i]%></h2>
+                <ul>
+                    <% for(let j = 0; j < events.length; j++) {
+                        if(events[j].category == categories[i])
+                        {%>
+                            <li>
+                                <a href="events/<%= events[j].id%>"><%= events[j].title%></a>
+                            </li>
+                        <%}
+                    }%>
+                </ul>
+            </li>
+        <%}%>
+    </ul>
+    <%} else {%>
+        <h2>No Events to Display</h2>
+        <%}%>
+</main>
+<%- include("../partials/footer.ejs") %>

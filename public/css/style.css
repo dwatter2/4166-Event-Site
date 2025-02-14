@@ -1,0 +1,274 @@
+body {
+    background-color: #E4E4D0;
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    font-size: 100%;
+}
+
+main {
+    font-size: .8rem;
+}
+
+header {
+    text-align: left;
+    top: 0;
+    background-color: #94A684;
+    color: #FFEEF4;
+    position: fixed;
+    width: 100%;
+    max-height: 180px;
+    font-size: 1rem;
+}
+
+.userNavigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 3px solid #AEC3AE;
+    margin: 0 8px;
+    text-align: center;
+}
+
+.logo {
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    min-width: min(250px, 20vw);
+}
+
+.siteName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.siteName h1 {
+    font-size: 30px;
+    min-width: 250px;
+}
+
+.userNavigation p {
+    padding-right: 25px;
+    display: inline;
+}
+
+.userTabs {
+    align-items: center;
+    margin: auto 0;
+    min-width: 103px;
+}
+
+.generalNavigation {
+    margin-left: 16px;
+    color: #FFEEF4;
+}
+
+a {
+    text-decoration: none;
+    color: #FFEEF4;
+}
+
+a:hover {
+    color: #fcd2e1;
+}
+
+footer {
+    text-align: left;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #94A684;
+    position: fixed;
+}
+
+.endNavigation {
+    margin-left: 16px;
+    color: #FFEEF4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.socialTabs{
+    align-items: right;
+    margin: auto 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialTabs a{
+    padding: 0 1em;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    width: 100%;
+    height: 80vh;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    margin-top: 150px;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 50px;
+}
+
+#profile a{
+    color: #000000;
+}
+
+#profile a:hover {
+    color: red;
+}
+
+main p {
+    width: 80%;
+    font-size: 16px;
+}
+
+#eventList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #000000;
+    min-height: 70vh;
+    margin-top: 150px;
+    padding-bottom: 20px;
+}
+
+#eventCreate {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    margin-top: 150px;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 50px;
+}
+
+#eventDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    width: 100%;
+    height: 42rem;
+    margin-top: 180px;
+    padding-bottom: 20px;
+}
+
+#eventIcon {
+    max-width: 300px;
+    max-height: 250px;
+}
+
+#eventSettings {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10px;
+}
+
+#eventSettings button {
+    border-radius: 20px;
+    display: flex;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#eventSettings img{
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 20px;
+}
+
+#profile button {
+    border-radius: 20px;
+    display: flex;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#profile img{
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.inline {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 16px;
+}
+
+li a {
+    color: #000000;
+}
+
+li a:hover {
+    color: #ff0000;
+}
+
+label {
+    display: block;
+    margin: 0 0 2vh 0;
+}
+
+input, select, textarea {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2px;
+}
+
+/*
+@media (max-height: 600px) {
+    footer {
+        width: 50%;
+        position: fixed;
+        right: 0;
+        font-size: .65rem;
+    }
+}
+*/
+
+.same-line {
+    display: flex;
+    align-items: center;
+}
+
+#rsvpSettings {
+    display:flex;
+    text-align: center;
+}
+
+#rsvpSettings p {
+    margin-right: 12px;
+}

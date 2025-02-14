@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RGC Webpage</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="userNavigation">
+                    <div class="logo">
+                        <a href="/"><img alt="Logo" src="/images/logo.jpeg" width="120" height="85"></a>
+                    </div>
+
+                    <div class="siteName">
+                        <h1><a href="/">Regular Game Club</a></h1>
+                    </div>
+                    
+                    <div class="userTabs">
+                        <%if(!user) { %>
+                        <p><a href="/users/new">Sign Up</a></p>
+                        <p><a href="/users/login">Login</a></p>
+                        <%} else {%>
+                        <p><a href="/events/new">New Event</a></p>
+                        <p><a href="/users/profile">Profile</a></p>
+                        <p><a href="/users/logout">Logout</a></p>
+                        <%}%>
+                    </div>
+                </div>
+                <div class="generalNavigation">
+                    <p><a href="/events">Events</a></p>
+                </div>
+            </nav>
+        </header>
